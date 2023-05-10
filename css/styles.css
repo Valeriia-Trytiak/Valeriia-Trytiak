@@ -1,3 +1,109 @@
-.link{
-   text-decoration: none; 
+:root {
+  /*Fonts*/
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /*Color text*/
+  --accent-color: #ff6c00;
+  --white-color-text: #ffffff;
+  --first-color-text: #303030;
+  --secondary-color-text: #555555;
+  --light-color-text: #9da4bd;
+  --bright-color-text: rgba(157, 164, 189, 0.6);
+
+  /*Color backgraund*/
+  --background-color-white: #ffffff;
+  --background-color-secondary: #f7f7f7;
+  --background-color-dark: #111319;
+}
+
+/**
+  |===========================================
+  |          Global styles and utilities
+  |===========================================
+*/
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--first-color-text);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**
+  |============================
+  |            HEDEAR
+  |============================
+*/
+.page-header {
+  background-color: var(--background-color-dark);
+}
+.page-header .link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+.header-nav.link:hover,
+.header-nav.link:focus {
+  color: var(--accent-color);
+}
+
+.header-contact.link:hover,
+.header-contact.link:focus {
+  color: var(--accent-color);
+}
+/**
+  |============================
+  |            HERO
+  |============================
+*/
+.page-hero {
+  background-color: var(--background-color-dark);
+}
+
+.hero-uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--bright-color-text);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.hero-desc {
+  color: #9da4bd;
 }
