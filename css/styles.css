@@ -24,7 +24,7 @@
 */
 body {
   font-family: var(--primary-font);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -53,6 +53,16 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /**
   |============================
   |            HEDEAR
@@ -62,7 +72,6 @@ body {
   background-color: var(--background-color-dark);
 }
 .page-header .link {
-  font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
@@ -79,17 +88,15 @@ body {
   color: var(--accent-color);
 }
 .header-btn {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  text-align: center;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
   color: var(--white-color-text);
+  background-color: transparent;
 }
+
+.header-btn:hover,
+.header-btn:focus {
+  background-color: var(--accent-color);
+}
+
 /**
   |============================
   |            HERO
@@ -99,8 +106,18 @@ body {
   background-color: var(--background-color-dark);
 }
 
+.sidebar-link {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus {
+  color: var(--accent-color);
+}
+
 .hero-uppertitle {
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
@@ -108,7 +125,7 @@ body {
   color: var(--bright-color-text);
 }
 .hero-title {
-  font-weight: 700;
+  font-family: var(--secondary-font);
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -119,3 +136,195 @@ body {
 .hero-desc {
   color: #9da4bd;
 }
+
+.hero-controls-btn {
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: var(--bright-color-text);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/**
+  |============================
+  |                  ABOUT
+  |============================
+*/
+
+.about.section {
+  background-color: var(--background-color-white);
+}
+
+.section-uppertitle {
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.about .section-subtitle {
+  color: var(--secondary-color-text);
+}
+
+.section-desc {
+  font-size: 14px;
+  line-height: 1.86;
+  color: var(--secondary-color-text);
+}
+
+.about-btn {
+  color: var(--first-color-text);
+  background-color: transparent;
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--white-color-text);
+  background-color: var(--accent-color);
+}
+
+/**
+  |============================
+  |                 PRICE
+  |============================
+*/
+.price.section {
+  background-color: #111319;
+}
+
+.price .section-uppertitle {
+  color: var(--bright-color-text);
+}
+
+.price .section-title {
+  color: var(--white-color-text);
+}
+
+.price-inner-item {
+  font-weight: 400;
+}
+
+.price-btn {
+  color: var(--white-color-text);
+  background-color: transparent;
+}
+
+.price-btn:hover,
+.price-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/**
+  |============================
+  |          BENEFIS
+  |============================
+*/
+
+.benefits .section {
+  background-color: var(--background-color-white);
+}
+
+.benefits .section-subtitle {
+  font-weight: 400;
+  color: var(--secondary-color-text);
+}
+
+.benefits-text {
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.benefits-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.benefits-mark {
+  font-size: 16px;
+
+  color: var(--accent-color);
+}
+
+/**
+  |============================
+  |                TEAM
+  |============================
+*/
+
+.team.section {
+  background-color: var(--background-color-secondary);
+}
+.team .section-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  /*text-align: center;*/
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  /*text-align: center;*/
+  color: var(--accent-color);
+}
+
+/**
+  |============================
+  | GALLERY
+  |============================
+*/
+
+.gallery.section {
+  background-color: var(--background-color-white);
+}
+
+/**
+  |============================
+  | BOOKINK
+  |============================
+*/
+
+/**
+  |============================
+  | CONTACTS
+  |============================
+*/
+
+.contacts.section {
+  background-color: #111319;
+}
+
+.contacts .link {
+  font-style: normal;
+  font-weight: 400;
+
+  color: var(--light-color-text);
+}
+
+.address.contacts {
+  font-weight: 700;
+}
+
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height, or 136% */
+
+text-transform: uppercase;
+
+color: rgba(157, 164, 189, 0.6);
