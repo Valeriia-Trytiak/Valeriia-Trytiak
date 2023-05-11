@@ -78,6 +78,18 @@ body {
 .header-contact.link:focus {
   color: var(--accent-color);
 }
+.header-btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--white-color-text);
+}
 /**
   |============================
   |            HERO
